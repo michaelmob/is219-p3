@@ -63,5 +63,12 @@ const vue_app = new Vue({
     dislike(movie) {
       movie.dislikes += 1;
     },
+
+    posterClick(movie) {
+	  if (movie.posterindex >= movie.posters.length - 1)
+		movie.posterindex = 0;
+	  else
+		movie.posterindex += 1;
+    }
   }
 })
