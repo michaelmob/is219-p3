@@ -68,5 +68,47 @@
     "likes": 812,
     "dislikes": 101,
     "posterindex": 0
+  },
+  {
+    "title": "Forrest Gump",
+    "iscore": 8.8,
+    "rating": "PG-13",
+    "runtime": 195,
+    "released": [1994, 7, 6],
+    "country": "USA",
+    "posters": ["img/gump.jpg", "img/gump2.jpg", "img/gump3.jpg"],
+    "imdb": "https://www.imdb.com/title/tt0109830/",
+    "website": "https://www.paramount.com/movies/forrest-gump",
+    "likes": 593,
+    "dislikes": 30,
+    "posterindex": 0
+  },
+  {
+    "title": "Apocalypse Now",
+    "iscore": 8.5,
+    "rating": "PG-13",
+    "runtime": 200,
+    "released": [1979, 8, 15],
+    "country": "USA",
+    "posters": ["img/apoc.jpg", "img/apoc2.jpg"],
+    "imdb": "https://www.imdb.com/title/tt0078788/",
+    "website": "https://www.netflix.com/title/262839",
+    "likes": 300,
+    "dislikes": 55,
+    "posterindex": 0
+  },
+  {
+    "title": "The Big Lebowski",
+    "iscore": 8.5,
+    "rating": "PG-13",
+    "runtime": 200,
+    "released": [1998, 6, 6],
+    "country": "USA",
+    "posters": ["img/lebowski.jpeg", "img/lebowski2.jpeg"],
+    "imdb": "https://www.imdb.com/title/tt0118715/",
+    "website": "https://www.lebowskifest.com/",
+    "likes": 300,
+    "dislikes": 55,
+    "posterindex": 0
   }
 ]
