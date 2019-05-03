@@ -55,5 +55,9 @@ const vue_app = new Vue({
     like(movie) {
       movie.likes += 1;
     },
+
+    dislike(movie) {
+      movie.dislikes += 1;
+    },
   }
 })

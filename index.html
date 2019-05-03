@@ -56,7 +56,7 @@
                 <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                 {{ movie.likes }}
               </p>
-              <p class="dislikes">
+              <p class="dislikes" @click="dislike(movie)">
                 <i class="fa fa-thumbs-down" aria-hidden="true"></i>
                 {{ movie.dislikes }}
               </p>
