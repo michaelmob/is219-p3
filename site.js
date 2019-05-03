@@ -52,6 +52,10 @@ const vue_app = new Vue({
       return `${month} ${date.getDate()}, ${date.getFullYear()}`;
     },
 
+    timeText(minutes) {
+      return `${Math.floor(minutes / 60)}h ${minutes % 60}m`;
+    },
+
     like(movie) {
       movie.likes += 1;
     },

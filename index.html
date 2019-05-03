@@ -41,7 +41,7 @@
               {{ movie.iscore }}
             </p>
             <p class="runtime">
-              Runtime: {{ movie.runtime }}
+              Runtime: {{ timeText(movie.runtime) }}
             </p>
             <p class="released">
               Released: {{ makeTextDate(movie.released) }} | Rated: {{ movie.rating }}
