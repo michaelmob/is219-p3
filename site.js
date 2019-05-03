@@ -46,5 +46,10 @@ const vue_app = new Vue({
 
   methods: {
     /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+    makeTextDate(dateArray) {
+      const date = new Date(dateArray[0], dateArray[1] - 1, dateArray[2]);
+      const month = date.toLocaleString('en-us', { month: 'long' });
+      return `${month} ${date.getDate()}, ${date.getFullYear()}`;
+    },
   }
 })

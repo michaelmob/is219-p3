@@ -44,7 +44,7 @@
               Runtime: {{ movie.runtime }}
             </p>
             <p class="released">
-              Released: {{ movie.released }} | Rated: {{ movie.rating }}
+              Released: {{ makeTextDate(movie.released) }} | Rated: {{ movie.rating }}
             </p>
             <p class="websites">
               Websites:
