@@ -22,21 +22,26 @@
 
 
 const vue_app = new Vue({
-  el: '#vue_app',
+  el: '#app',
 
   // This automatically imports your movies.json file and puts it into
   // the variable: movies
   created() {
-    fetch('movies.json').then(response => response.json()).then(json => {
-      this.movies = json
-    })
+    fetch('movies.json')
+      .then(response => response.json())
+      .then(json => {
+        this.movies = json;
+      });
   },
 
   data: {
     // This holds your movies.json data.
-    movies: []
+    movies: [],
 
     /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
+    title: "IMDB + Mike's Top 8 Movies",
+    owner: 'Mike',
+    github: 'https://github.com/thetarkus/is219-p3'
   },
 
   methods: {
