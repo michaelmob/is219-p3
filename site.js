@@ -22,16 +22,16 @@
 
 
 const vue_app = new Vue({
-  el: '#app',
+el: '#app',
 
-  // This automatically imports your movies.json file and puts it into
+// This automatically imports your movies.json file and puts it into
   // the variable: movies
   created() {
-    fetch('movies.json')
-      .then(response => response.json())
-      .then(json => {
-        this.movies = json;
-      });
+  fetch('movies.json')
+    .then(response => response.json())
+    .then(json => {
+      this.movies = json;
+    });
   },
 
   data: {
@@ -39,7 +39,7 @@ const vue_app = new Vue({
     movies: [],
 
     /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-    title: "IMDB + Mike's Top 8 Movies",
+    title: "IMDb + Mike's Top 8 Movies",
     owner: 'Mike',
     github: 'https://github.com/thetarkus/is219-p3'
   },
@@ -65,10 +65,10 @@ const vue_app = new Vue({
     },
 
     posterClick(movie) {
-	  if (movie.posterindex >= movie.posters.length - 1)
-		movie.posterindex = 0;
-	  else
-		movie.posterindex += 1;
+      if (movie.posterindex >= movie.posters.length - 1)
+        movie.posterindex = 0;
+      else
+        movie.posterindex += 1;
     }
   }
 })
