@@ -51,5 +51,9 @@ const vue_app = new Vue({
       const month = date.toLocaleString('en-us', { month: 'long' });
       return `${month} ${date.getDate()}, ${date.getFullYear()}`;
     },
+
+    like(movie) {
+      movie.likes += 1;
+    },
   }
 })

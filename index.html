@@ -52,7 +52,7 @@
               <a :href="movie.website" target="_blank">{{ movie.website }}</a>
             </p>
             <div class="social">
-              <p class="likes">
+              <p class="likes" @click="like(movie)">
                 <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                 {{ movie.likes }}
               </p>
